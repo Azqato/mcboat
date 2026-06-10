@@ -1,8 +1,8 @@
 # PRD: Boaty McBoatface Ventures — Official Web Experience
 
-**Version:** 1.0  
+**Version:** 2.0  
 **Status:** Active  
-**Author:** Zoop (interpreting a sticky note drawing from Tigershark)  
+**Author:** Azqato (interpreting a sticky note drawing from Tigershark)  
 **Source Material:** Four Post-it notes, one week of "work," zero regrets
 
 ---
@@ -188,4 +188,4 @@ Pre-answered questions nobody asked. Examples:
 
 ---
 
-*Document written based on the comprehensive business plan delivered by Tigershark on four Post-it notes. Zoop (CTO) built the website.*
+*Document written based on the comprehensive business plan delivered by Tigershark on four Post-it notes. Azqato (CTO) built the website.*

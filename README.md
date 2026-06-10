@@ -8,12 +8,12 @@ The official web presence of **Boaty McBoatface Ventures** — New England's pre
 
 ## 🧠 The Origin Story
 
-Zoop told Tigershark to come up with a business idea. One week later, Tigershark texted a photo of four sticky notes. This website is that business plan, fully realized.
+Azqato told Tigershark to come up with a business idea. One week later, Tigershark texted a photo of four sticky notes. This website is that business plan, fully realized.
 
 | Role | Person |
 |------|--------|
 | Founder & Chief Vision Officer | **Tigershark** — the sticky notes, the concept, the eject idea |
-| Co-Founder & CTO | **Zoop** — the one who turned sticky notes into a website |
+| Co-Founder & CTO | **[Azqato](https://azqato.github.io/)** — the one who turned sticky notes into a website |
 
 The pitch, verbatim (transcribed from the notes):
 - A boat named **Boaty McBoatface**
