@@ -2,7 +2,7 @@
 
 **Version:** 1.0  
 **Status:** Active  
-**Author:** Zoop (interpreting a sticky note drawing)  
+**Author:** Zoop (interpreting a sticky note drawing from Tigershark)  
 **Source Material:** Four Post-it notes, one week of "work," zero regrets
 
 ---
@@ -30,7 +30,7 @@ My friend spent a week developing a business plan and delivered it on sticky not
 
 | Segment | Description |
 |---------|-------------|
-| Friends who are shown this | Primary audience. They will not invest. |
+| Friends who are shown this | Primary audience. Tigershark's friends specifically. They will not invest. |
 | Bored developers on GitHub | Will read the code, maybe star the repo |
 | People who named a real ship "Boaty McBoatface" | They'll understand immediately |
 | Actual investors | Not the target, but welcome to try |
@@ -184,8 +184,8 @@ Pre-answered questions nobody asked. Examples:
 | Site is too funny and people think it's real | Low | Add small "satire" footer note |
 | Someone actually tries to build the exo-skeleton | Low | They're on their own |
 | Sharks | High | Already documented on the map |
-| Friend demands credit | Medium | Add a "Special Thanks" section |
+| Tigershark demands credit | Medium | Already credited on every page footer |
 
 ---
 
-*Document written based on the comprehensive business plan delivered on four Post-it notes.*
+*Document written based on the comprehensive business plan delivered by Tigershark on four Post-it notes. Zoop (CTO) built the website.*
