@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Canvas Exo-Skeleton by Boaty McBoatface Ventures. It displaces water. That's the main thing." />
+  <meta property="og:title" content="The Canvas Exo-Skeleton — Boaty McBoatface Ventures" />
+  <meta property="og:description" content="Displaces water. Available in Bronze, Silver, and Gold. Sharks not included." />
+  <meta property="og:image" content="../assets/images/og-image.png" />
+  <title>The Canvas Exo-Skeleton — Boaty McBoatface Ventures</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛵</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-emoji" aria-hidden="true">⛵</span>
+      Boaty McBoatface Ventures
+    </a>
+    <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="product.html" aria-current="page">The Skeleton</a></li>
+      <li><a href="map.html">Service Map</a></li>
+      <li><a href="invest.html">Invest</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-sound">
+      <label class="sound-label" for="sound-toggle-nav">Sound</label>
+      <input type="checkbox" id="sound-toggle-nav" class="sound-checkbox" />
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="product-hero" aria-label="Product hero">
+  <div class="container">
+    <p class="section-label">Flagship Product</p>
+    <h1 class="display-giant">The Canvas<br>Exo-Skeleton</h1>
+    <p style="font-size: var(--text-xl); margin: var(--space-4) auto var(--space-6); max-width: 50ch; font-family: var(--font-display);">
+      It displaces water. That's the main thing.
+    </p>
+    <p style="font-size: var(--text-base); max-width: 55ch; margin: 0 auto var(--space-8); opacity: 0.8;">
+      After one week of research and development (on sticky notes), our engineers arrived at a singular breakthrough:
+      a frame made of canvas that, when worn in water, displaces water. This is what we built the company on.
+    </p>
+    <a href="#pricing" class="btn btn-primary">See Pricing</a>
+    <a href="#how-it-works" class="btn btn-secondary" style="margin-left: var(--space-4);">How It Works</a>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-padding" id="how-it-works" aria-label="How it works">
+  <div class="container">
+    <div class="product-explainer">
+      <div class="product-explainer-text">
+        <p class="section-label">Technical Overview</p>
+        <h2>The Science of Being Ejected</h2>
+        <p style="margin: var(--space-4) 0;">Based on three exhaustive sticky note diagrams, here's how the experience works:</p>
+        <ul class="feature-list">
+          <li>You board Boaty McBoatface at the designated dock</li>
+          <li>You are fitted with your Canvas Exo-Skeleton (size TBD)</li>
+          <li>The vessel travels to a safe New England coastal location</li>
+          <li>At the aft deck, you are positioned on the eject platform</li>
+          <li>Upon countdown, you are ejected off the aft of the boat</li>
+          <li>The Canvas Exo-Skeleton displaces water upon entry</li>
+          <li>You float. <span class="easter-egg" title="The sharks also float. They are not wearing exo-skeletons. Think about that.">Probably.</span></li>
+          <li>A crew member retrieves you. Eventually.</li>
+        </ul>
+      </div>
+      <div>
+        <!-- Explainer diagram based on purple sticky note -->
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" role="img"
+             aria-label="Canvas exo-skeleton diagram showing water displacement"
+             style="border:2.5px solid #1A1A2E; border-radius: 4px 10px 6px 8px / 8px 6px 10px 4px; box-shadow: 5px 5px 0 #1A1A2E; background:#C9B8E8; padding: 12px; width:100%;">
+
+          <text x="10" y="22" font-family="'Permanent Marker',cursive" font-size="11" fill="#1A1A2E">to displace water →</text>
+          <text x="145" y="22" font-family="'Permanent Marker',cursive" font-size="11" fill="#1A1A2E">Canvas exo-skeleton</text>
+
+          <!-- Top view: frame with person inside -->
+          <rect x="35" y="32" width="110" height="70" rx="4" fill="none" stroke="#1A1A2E" stroke-width="3"/>
+          <!-- Side handles -->
+          <rect x="14" y="46" width="21" height="40" rx="5" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
+          <rect x="145" y="46" width="21" height="40" rx="5" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
+          <!-- Person hands visible -->
+          <path d="M 35,56 Q 20,62 14,67" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+          <path d="M 145,56 Q 160,62 166,67" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+          <!-- Person inside top view -->
+          <ellipse cx="90" cy="67" rx="30" ry="22" fill="none" stroke="#1A1A2E" stroke-width="2" stroke-dasharray="3,3"/>
+          <circle cx="90" cy="52" r="8" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+
+          <text x="10" y="120" font-family="'Permanent Marker',cursive" font-size="10" fill="#1A1A2E">in the water:</text>
+
+          <!-- Waves -->
+          <path d="M 8,135 Q 35,128 62,135 Q 89,142 116,135 Q 143,128 170,135 Q 197,142 220,135" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+          <path d="M 8,145 Q 40,138 72,145 Q 104,152 136,145 Q 168,138 200,145" fill="none" stroke="#1A1A2E" stroke-width="1.5" opacity="0.5"/>
+
+          <!-- Side view of exo-skeleton in water -->
+          <rect x="50" y="148" width="100" height="55" rx="4" fill="none" stroke="#1A1A2E" stroke-width="3"/>
+          <!-- Side handles -->
+          <rect x="27" y="160" width="23" height="30" rx="5" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
+          <rect x="150" y="160" width="23" height="30" rx="5" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
+          <!-- Person inside side view -->
+          <ellipse cx="100" cy="175" rx="25" ry="16" fill="none" stroke="#1A1A2E" stroke-width="2" stroke-dasharray="3,3"/>
+
+          <!-- Water displacement arrows -->
+          <path d="M 50,203 L 28,215" stroke="#1A1A2E" stroke-width="2" marker-end="url(#arr)"/>
+          <path d="M 150,203 L 172,215" stroke="#1A1A2E" stroke-width="2" marker-end="url(#arr)"/>
+          <text x="8" y="228" font-family="'Permanent Marker',cursive" font-size="9" fill="#1A1A2E">↙ water displaced ↘</text>
+
+          <!-- Shark below -->
+          <path d="M 195,268 L 220,248 L 245,268 Z" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
+          <path d="M 180,275 Q 212,282 245,275" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+          <text x="178" y="295" font-family="'Permanent Marker',cursive" font-size="9" fill="#1A1A2E">shark (noted)</text>
+
+          <defs>
+            <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+              <path d="M 0,0 L 8,4 L 0,8 Z" fill="#1A1A2E"/>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEC TABLE -->
+<section style="background: var(--color-mint); border-top: var(--border-sketch); border-bottom: var(--border-sketch); padding: var(--space-12) var(--space-6);" aria-label="Product specifications">
+  <div class="container text-center">
+    <p class="section-label">Technical Specifications</p>
+    <h2 class="section-title">What You're Getting</h2>
+    <div style="max-width:580px; margin: var(--space-6) auto 0; border: var(--border-sketch); border-radius: var(--radius-sm); box-shadow: var(--shadow-sketch); overflow:hidden; background: var(--color-bg);">
+      <table style="width:100%; border-collapse:collapse; font-size: var(--text-sm);" role="table" aria-label="Canvas exo-skeleton specifications">
+        <thead>
+          <tr style="background: var(--color-ink); color: #fff;">
+            <th style="padding: var(--space-3) var(--space-4); text-align:left; font-family: var(--font-display);">Spec</th>
+            <th style="padding: var(--space-3) var(--space-4); text-align:left; font-family: var(--font-display);">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1.5px solid var(--color-ink);">
+            <td style="padding: var(--space-3) var(--space-4); font-family:var(--font-display);">Primary Material</td>
+            <td style="padding: var(--space-3) var(--space-4);">Canvas (hence the name)</td>
+          </tr>
+          <tr style="border-bottom: 1.5px solid var(--color-ink); background: #f5f5f0;">
+            <td style="padding: var(--space-3) var(--space-4); font-family:var(--font-display);">Key Function</td>
+            <td style="padding: var(--space-3) var(--space-4);">Water displacement</td>
+          </tr>
+          <tr style="border-bottom: 1.5px solid var(--color-ink);">
+            <td style="padding: var(--space-3) var(--space-4); font-family:var(--font-display);">Secondary Function</td>
+            <td style="padding: var(--space-3) var(--space-4);">Looking like you have a plan</td>
+          </tr>
+          <tr style="border-bottom: 1.5px solid var(--color-ink); background: #f5f5f0;">
+            <td style="padding: var(--space-3) var(--space-4); font-family:var(--font-display);">Shark Deterrence</td>
+            <td style="padding: var(--space-3) var(--color-ink); padding: var(--space-3) var(--space-4);">Unconfirmed (ongoing study)</td>
+          </tr>
+          <tr style="border-bottom: 1.5px solid var(--color-ink);">
+            <td style="padding: var(--space-3) var(--space-4); font-family:var(--font-display);">Eject Velocity</td>
+            <td style="padding: var(--space-3) var(--space-4);">Fast. We don't have numbers.</td>
+          </tr>
+          <tr style="border-bottom: 1.5px solid var(--color-ink); background: #f5f5f0;">
+            <td style="padding: var(--space-3) var(--space-4); font-family:var(--font-display);">Regulatory Status</td>
+            <td style="padding: var(--space-3) var(--space-4);">Pending (optimistic)</td>
+          </tr>
+          <tr>
+            <td style="padding: var(--space-3) var(--space-4); font-family:var(--font-display);">Return Policy</td>
+            <td style="padding: var(--space-3) var(--space-4);">You've already been ejected</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing" aria-label="Pricing tiers">
+  <div class="container">
+    <p class="section-label">Investment Options</p>
+    <h2 class="section-title">Choose Your Skeleton</h2>
+    <p class="section-subtitle" style="margin: 0 auto var(--space-4);">
+      Three tiers. One purpose. Zero regrets (we think).
+    </p>
+    <div class="pricing-grid">
+
+      <!-- Bronze -->
+      <div class="pricing-card" role="article" aria-label="Bronze Skeleton tier">
+        <div class="pricing-tier-name">🥉 Bronze Skeleton</div>
+        <div class="pricing-price">$299</div>
+        <div class="pricing-tagline">"You float. Probably."</div>
+        <ul class="pricing-features">
+          <li>Standard canvas frame</li>
+          <li>One eject experience</li>
+          <li>Life jacket included (just in case)</li>
+          <li>Crew retrieval within 20 min</li>
+          <li>Certificate of ejection</li>
+          <li style="opacity:0.4;text-decoration:line-through;">Shark zone priority seating</li>
+        </ul>
+        <button class="btn btn-primary buy-now-btn" aria-label="Buy Bronze Skeleton" style="width:100%; text-align:center;">Buy Now</button>
+      </div>
+
+      <!-- Silver -->
+      <div class="pricing-card" role="article" aria-label="Silver Skeleton tier">
+        <div class="pricing-popular" aria-label="Most popular tier">Most Ejected</div>
+        <div class="pricing-tier-name">🥈 Silver Skeleton</div>
+        <div class="pricing-price">$499</div>
+        <div class="pricing-tagline">"Reinforced canvas. The sharks respect it more."</div>
+        <ul class="pricing-features">
+          <li>Reinforced canvas frame</li>
+          <li>Two eject experiences</li>
+          <li>Premium life jacket</li>
+          <li>Crew retrieval within 10 min</li>
+          <li>Framed certificate of ejection</li>
+          <li>Shark zone seating upgrade</li>
+          <li>Splash photo included</li>
+        </ul>
+        <button class="btn btn-secondary buy-now-btn" aria-label="Buy Silver Skeleton" style="width:100%; text-align:center;">Buy Now</button>
+      </div>
+
+      <!-- Gold -->
+      <div class="pricing-card" role="article" aria-label="Gold Skeleton tier">
+        <div class="pricing-tier-name">🥇 Gold Skeleton</div>
+        <div class="pricing-price">$999</div>
+        <div class="pricing-tagline">"Gold-plated canvas (aesthetics only). Maximum ejection velocity."</div>
+        <ul class="pricing-features">
+          <li>Gold-plated canvas frame*</li>
+          <li>Unlimited ejections (same day)</li>
+          <li>VIP life jacket (monogrammed)</li>
+          <li>Immediate crew retrieval</li>
+          <li>NFT of your eject arc</li>
+          <li>Priority shark zone positioning</li>
+          <li>Boaty McBoatface branded towel</li>
+          <li>Post-eject debrief with Zoop</li>
+        </ul>
+        <button class="btn btn-yellow buy-now-btn" aria-label="Buy Gold Skeleton" style="width:100%; text-align:center;">Buy Now</button>
+      </div>
+
+    </div>
+    <p style="font-size: var(--text-xs); opacity: 0.5; margin-top: var(--space-6); font-style:italic;">
+      *Gold plating is aesthetic only. The canvas does not respond to gold. We tried.
+    </p>
+  </div>
+</section>
+
+<!-- BUY MODAL (Dead End) -->
+<div class="modal-overlay" id="buy-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <h2 id="modal-title">Congratulations! 🎉</h2>
+    <p>You've expressed interest in purchasing a Canvas Exo-Skeleton.</p>
+    <p>Unfortunately, we don't have any yet.</p>
+    <p>We also don't have a website for purchasing things.</p>
+    <p>Or manufacturing capabilities.</p>
+    <p>Or a legal entity.</p>
+    <p>But your interest has been noted.</p>
+    <div class="modal-sticky">
+      📝 Customer interest: 1 person<br>
+      Date: noted<br>
+      Follow-up: eventually
+    </div>
+    <p style="font-size: var(--text-sm); opacity:0.7;">
+      Seriously though — <a href="invest.html" style="color:var(--color-ink);">check out the investor pitch</a>.
+      We're very close to having a boat. (We're not.)
+    </p>
+    <div class="modal-actions">
+      <button class="btn btn-primary modal-close" aria-label="Close modal">Okay Then</button>
+      <a href="invest.html" class="btn btn-yellow">Give Us $2M Instead</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">⛵ Boaty McBoatface Ventures</div>
+      <p>The Canvas Exo-Skeleton. It displaces water. That's it. That's the pitch.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="map.html">Service Map</a></li>
+        <li><a href="invest.html">Invest</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>The Fine Print</h4>
+      <ul role="list">
+        <li><a href="faq.html">Is This Legal?</a></li>
+        <li><a href="faq.html">Shark Disclaimer</a></li>
+        <li><a href="map.html">Shark Map</a></li>
+        <li><a href="faq.html">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Boaty McBoatface Ventures — This is satire. Please do not order a canvas exo-skeleton.</span>
+    <span>🦈 Sharks not affiliated</span>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+</body>
+</html>

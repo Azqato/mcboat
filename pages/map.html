@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Boaty McBoatface Ventures New England Service Area. Six states. Live shark risk indicators. One route." />
+  <meta property="og:title" content="New England Service Map — Boaty McBoatface Ventures" />
+  <meta property="og:description" content="We cover all of New England. All of it. Including the sharks." />
+  <title>New England Service Map — Boaty McBoatface Ventures</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛵</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-emoji" aria-hidden="true">⛵</span>
+      Boaty McBoatface Ventures
+    </a>
+    <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="product.html">The Skeleton</a></li>
+      <li><a href="map.html" aria-current="page">Service Map</a></li>
+      <li><a href="invest.html">Invest</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-sound">
+      <label class="sound-label" for="sound-toggle-nav">Sound</label>
+      <input type="checkbox" id="sound-toggle-nav" class="sound-checkbox" />
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="map-hero" aria-label="Map page hero">
+  <div class="container">
+    <p class="section-label">Coverage Area</p>
+    <h1 class="display-giant">New England<br>Service Map</h1>
+    <p style="font-size:var(--text-lg); max-width:55ch; margin: var(--space-4) auto; font-family:var(--font-display); opacity:0.8;">
+      Six states. Fourteen million potential customers.<br>
+      An undetermined number of sharks.
+    </p>
+    <p style="font-size:var(--text-base); max-width:52ch; margin: 0 auto; opacity:0.7;">
+      Hover over any state to see shark risk levels and other important operational data.
+      Vermont is included for completeness. We acknowledge this is a maritime company.
+    </p>
+  </div>
+</section>
+
+<!-- MAP + SIDEBAR -->
+<section style="padding: var(--space-12) 0;" aria-label="Interactive map section">
+  <div class="map-layout">
+
+    <!-- SVG MAP -->
+    <div>
+      <p style="font-family:var(--font-display); font-size:var(--text-sm); opacity:0.6; margin-bottom:var(--space-3); text-align:center;">Hover a state. Click to select.</p>
+      <svg id="ne-map"
+           viewBox="0 0 500 560"
+           xmlns="http://www.w3.org/2000/svg"
+           role="img"
+           aria-label="New England states map with shark risk indicators">
+
+        <!-- MAINE — high shark risk -->
+        <path data-state="maine"
+              data-label="Maine 🦈🦈🦈"
+              data-shark-level="🦈🦈🦈 Extremely High"
+              data-quip="Where great whites come for vacation. Also lobsters."
+              d="M 245,25 L 290,22 L 330,28 L 368,55 L 392,120 L 388,200 L 362,268 L 315,308 L 272,322 L 248,305 L 246,240 L 244,130 Z"
+              tabindex="0" aria-label="Maine — Shark Risk: Extremely High"/>
+
+        <!-- NEW HAMPSHIRE — medium shark risk -->
+        <path data-state="new-hampshire"
+              data-label="New Hampshire 🦈"
+              data-shark-level="🦈 Low-Medium"
+              data-quip="Small coastline. The sharks barely bother. Barely."
+              d="M 210,88 L 246,85 L 246,305 L 248,320 L 214,328 L 208,290 L 210,200 Z"
+              tabindex="0" aria-label="New Hampshire — Shark Risk: Low-Medium"/>
+
+        <!-- VERMONT — no sharks (landlocked) -->
+        <path data-state="vermont"
+              data-label="Vermont 🌲"
+              data-shark-level="✅ Zero (Landlocked)"
+              data-quip="Absolutely no sharks. Maximum maple syrup. One of these is dangerous."
+              d="M 158,92 L 210,88 L 210,328 L 162,328 L 154,300 L 157,200 Z"
+              tabindex="0" aria-label="Vermont — Shark Risk: Zero (landlocked)"/>
+
+        <!-- MASSACHUSETTS main body + cape -->
+        <path data-state="massachusetts"
+              data-label="Massachusetts 🦈🦈"
+              data-shark-level="🦈🦈 High (Cape: Extreme)"
+              data-quip="Home of the Cape Cod White Shark Conservancy. They are conserving them. For you."
+              d="M 150,328 L 248,320 L 252,330 L 310,322 L 328,342 L 326,368 L 305,384 L 210,392 L 150,390 L 145,370 Z"
+              tabindex="0" aria-label="Massachusetts — Shark Risk: High"/>
+
+        <!-- CAPE COD (part of MA, separate path for effect) -->
+        <path data-state="massachusetts"
+              data-label="Massachusetts — Cape Cod 🦈🦈🦈"
+              data-shark-level="🦈🦈🦈 MAXIMUM SHARK"
+              data-quip="This is their territory. You are the guest. Dress accordingly."
+              d="M 310,322 L 368,326 L 408,342 L 422,362 L 416,386 L 398,398 L 375,392 L 348,375 L 328,355 L 326,342 Z"
+              tabindex="0" aria-label="Cape Cod — Maximum shark risk"/>
+
+        <!-- RHODE ISLAND — medium -->
+        <path data-state="rhode-island"
+              data-label="Rhode Island 🦈"
+              data-shark-level="🦈 Medium"
+              data-quip="The smallest state. The sharks here are proportionally larger. It's perspective."
+              d="M 305,384 L 338,384 L 344,412 L 340,438 L 312,442 L 304,420 Z"
+              tabindex="0" aria-label="Rhode Island — Shark Risk: Medium"/>
+
+        <!-- CONNECTICUT — low -->
+        <path data-state="connecticut"
+              data-label="Connecticut 🐟"
+              data-shark-level="🐟 Low (mostly regular fish)"
+              data-quip="Technically part of New England. The sharks keep forgetting."
+              d="M 148,390 L 305,390 L 305,448 L 148,450 Z"
+              tabindex="0" aria-label="Connecticut — Shark Risk: Low"/>
+
+        <!-- Boaty McBoatface route (animated dashed line) -->
+        <path class="route-line"
+              d="M 430,380 Q 400,370 370,360 Q 320,340 280,390 Q 240,440 190,430 Q 150,420 120,410"
+              aria-label="Boaty McBoatface planned route"/>
+
+        <!-- Boat icon on route -->
+        <text x="418" y="376" font-size="18" aria-label="Boat position">⛵</text>
+
+        <!-- Shark icons in high-risk zones -->
+        <text x="358" y="270" font-size="16" opacity="0.7" aria-hidden="true">🦈</text>
+        <text x="395" y="360" font-size="14" opacity="0.7" aria-hidden="true">🦈</text>
+        <text x="80"  y="430" font-size="12" opacity="0.5" aria-hidden="true">🦈</text>
+
+        <!-- State labels -->
+        <text x="310" y="160" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="14" fill="#1A1A2E" pointer-events="none">ME</text>
+        <text x="228" y="210" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="11" fill="#1A1A2E" pointer-events="none">NH</text>
+        <text x="183" y="220" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="11" fill="#1A1A2E" pointer-events="none">VT</text>
+        <text x="225" y="362" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="12" fill="#1A1A2E" pointer-events="none">MA</text>
+        <text x="378" y="362" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="10" fill="#1A1A2E" pointer-events="none">Cape</text>
+        <text x="323" y="418" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="9" fill="#1A1A2E" pointer-events="none">RI</text>
+        <text x="227" y="425" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="12" fill="#1A1A2E" pointer-events="none">CT</text>
+
+        <!-- Water area label -->
+        <text x="450" y="490" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="11" fill="#5BA3C9" opacity="0.8">Atlantic Ocean</text>
+        <text x="450" y="505" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="9" fill="#5BA3C9" opacity="0.6">(where the sharks live)</text>
+
+      </svg>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="map-sidebar">
+      <h3>Shark Risk Legend</h3>
+      <div class="shark-legend" aria-label="Shark risk level legend">
+        <div class="shark-row">
+          <div class="shark-dot none"></div>
+          <span><strong>None</strong> — Vermont. No coast. No sharks. Well done, Vermont.</span>
+        </div>
+        <div class="shark-row">
+          <div class="shark-dot low"></div>
+          <span><strong>Low</strong> — Connecticut. Regular fish mostly. Some concerning ones.</span>
+        </div>
+        <div class="shark-row">
+          <div class="shark-dot medium"></div>
+          <span><strong>Medium</strong> — NH, RI. Sharks present but they're not committed.</span>
+        </div>
+        <div class="shark-row">
+          <div class="shark-dot high"></div>
+          <span><strong>High / Extreme</strong> — Maine, Cape Cod. We're in their house.</span>
+        </div>
+      </div>
+
+      <div class="route-info">
+        <h4>🔴 Live Route: Boaty McBoatface</h4>
+        <p>Currently: <strong>Docked (Spiritually)</strong></p>
+        <p style="margin-top:var(--space-2);">Planned route travels from Boston Harbor north along the Maine coast. Eject zones marked. Shark zones also marked. There is overlap.</p>
+        <p style="margin-top:var(--space-2); font-size:var(--text-xs); opacity:0.6;">Last updated: when the sticky note was drawn</p>
+      </div>
+
+      <div style="margin-top: var(--space-6);">
+        <h4 style="font-family: var(--font-display); margin-bottom: var(--space-3);">State Stats</h4>
+        <div id="state-detail" style="font-size:var(--text-sm); border: var(--border-sketch); border-radius: var(--radius-sm); padding: var(--space-4); background: var(--color-bg); box-shadow: var(--shadow-sketch); min-height: 100px; font-family: var(--font-display);">
+          <p style="opacity:0.5; font-family: var(--font-body);">Hover a state on the map to see details.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: var(--space-6); display:flex; flex-direction:column; gap: var(--space-3);">
+        <a href="product.html" class="btn btn-primary" style="text-align:center;">Get an Exo-Skeleton</a>
+        <a href="faq.html#sharks" class="btn btn-yellow" style="text-align:center;">🦈 Shark FAQ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATE DETAIL SECTION -->
+<section style="background: var(--color-mint); border-top: var(--border-sketch); border-bottom: var(--border-sketch); padding: var(--space-12) var(--space-6);" aria-label="State details">
+  <div class="container">
+    <p class="section-label">State By State</p>
+    <h2 class="section-title">The Full Briefing</h2>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-top: var(--space-8);">
+
+      <div class="sticky-card sticky-salmon" role="article">
+        <h3 style="font-size:var(--text-xl);">🦈🦈🦈 Maine</h3>
+        <p><strong>Shark Risk:</strong> Extremely High</p>
+        <p style="margin-top:var(--space-2);">Primary operating zone. Best coastline. Most sharks. Great white sightings increase every year. The exo-skeleton was designed with Maine in mind.</p>
+        <p style="margin-top:var(--space-2); font-size:var(--text-sm); opacity:0.8;">Notable: The Great White made Maine famous before we did.</p>
+      </div>
+
+      <div class="sticky-card sticky-yellow" role="article">
+        <h3 style="font-size:var(--text-xl);">🦈🦈🦈 Cape Cod, MA</h3>
+        <p><strong>Shark Risk:</strong> Maximum</p>
+        <p style="margin-top:var(--space-2);">Cape Cod has its own dedicated shark research organization. This is their territory. We are guests. The exo-skeleton is your invitation.</p>
+        <p style="margin-top:var(--space-2); font-size:var(--text-sm); opacity:0.8;">Notable: The Cape Cod White Shark Conservancy exists. That's a sentence.</p>
+      </div>
+
+      <div class="sticky-card sticky-mint" role="article">
+        <h3 style="font-size:var(--text-xl);">🦈 New Hampshire</h3>
+        <p><strong>Shark Risk:</strong> Low-Medium</p>
+        <p style="margin-top:var(--space-2);">New Hampshire has 18 miles of coastline. Sharks are present but they find the small surface area underwhelming. They still show up.</p>
+        <p style="margin-top:var(--space-2); font-size:var(--text-sm); opacity:0.8;">State motto: "Live Free or Drown" (does not apply to the exo-skeleton experience).</p>
+      </div>
+
+      <div class="sticky-card sticky-lavender" role="article">
+        <h3 style="font-size:var(--text-xl);">🌲 Vermont</h3>
+        <p><strong>Shark Risk:</strong> Zero</p>
+        <p style="margin-top:var(--space-2);">Landlocked. We include Vermont because it was on the sticky note and we respect the original vision. No maritime operations planned.</p>
+        <p style="margin-top:var(--space-2); font-size:var(--text-sm); opacity:0.8;">Vermont: confirmed shark-free since forever. This is their only advantage.</p>
+      </div>
+
+      <div class="sticky-card sticky-salmon" role="article">
+        <h3 style="font-size:var(--text-xl);">🦈 Rhode Island</h3>
+        <p><strong>Shark Risk:</strong> Medium</p>
+        <p style="margin-top:var(--space-2);">The smallest state has proportionally larger relative shark encounters. The sharks here are also small but ambitious. Just like Rhode Island.</p>
+        <p style="margin-top:var(--space-2); font-size:var(--text-sm); opacity:0.8;">Block Island: technically accessible. Sharks aware.</p>
+      </div>
+
+      <div class="sticky-card sticky-yellow" role="article">
+        <h3 style="font-size:var(--text-xl);">🐟 Connecticut</h3>
+        <p><strong>Shark Risk:</strong> Low</p>
+        <p style="margin-top:var(--space-2);">Mostly regular fish. Some concerning ones. Connecticut is technically part of New England but the sharks keep forgetting it's there. We don't blame them.</p>
+        <p style="margin-top:var(--space-2); font-size:var(--text-sm); opacity:0.8;">Still in service area. Connecticut knows why.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOOLTIP (absolute positioned, JS-controlled) -->
+<div class="map-tooltip" id="map-tooltip" role="tooltip" aria-live="polite">
+  <div class="tt-state"></div>
+  <div class="tt-shark"></div>
+  <div class="tt-line"></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">⛵ Boaty McBoatface Ventures</div>
+      <p>We cover all of New England. All of it. Including Vermont, which we acknowledge is confusing.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="product.html">The Skeleton</a></li>
+        <li><a href="invest.html">Invest</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Shark Info</h4>
+      <ul role="list">
+        <li><a href="faq.html">Are There Sharks?</a></li>
+        <li><a href="product.html">The Exo-Skeleton</a></li>
+        <li><a href="faq.html#sharks">Shark Policy</a></li>
+        <li><a href="faq.html">Can I Swim?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Boaty McBoatface Ventures — Shark risk data last updated: when it was drawn on a sticky note</span>
+    <span>🦈 Sharks are real. This company is not. The distinction matters.</span>
+  </div>
+</footer>
+
+<script>
+  // Extra: update state-detail panel on map hover
+  document.addEventListener('DOMContentLoaded', function () {
+    var detail = document.getElementById('state-detail');
+    var paths = document.querySelectorAll('#ne-map path[data-state]');
+    paths.forEach(function (p) {
+      p.addEventListener('mouseenter', function () {
+        if (!detail) return;
+        detail.innerHTML =
+          '<strong>' + (p.getAttribute('data-label') || '') + '</strong><br>' +
+          '<span style="color:#E74C3C">' + (p.getAttribute('data-shark-level') || '') + '</span><br>' +
+          '<span style="opacity:0.7; font-family:var(--font-body); font-size:0.8rem; margin-top:4px; display:block">' +
+          (p.getAttribute('data-quip') || '') + '</span>';
+      });
+    });
+  });
+</script>
+<script src="../js/main.js" defer></script>
+</body>
+</html>
