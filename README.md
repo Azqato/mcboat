@@ -1,125 +1,123 @@
-# 🚢 Boaty McBoatface Ventures
+# Boaty McBoatface Ventures
 
-> *"A week of planning. Four sticky notes. One dream."*
+A static parody marketing website for a fictional New England boat ejection tourism company, built from a four-sticky-note business plan.
 
-The official web presence of **Boaty McBoatface Ventures** — New England's premier canvas exo-skeleton water displacement experience company. The only boat-based ejection tourism startup you didn't know you needed.
-
----
-
-## 🧠 The Origin Story
-
-Azqato told Tigershark to come up with a business idea. One week later, Tigershark texted a photo of four sticky notes. This website is that business plan, fully realized.
-
-| Role | Person |
-|------|--------|
-| Founder & Chief Vision Officer | **Tigershark** — the sticky notes, the concept, the eject idea |
-| Co-Founder & CTO | **[Azqato](https://azqato.github.io/)** — the one who turned sticky notes into a website |
-
-The pitch, verbatim (transcribed from the notes):
-- A boat named **Boaty McBoatface**
-- An **eject** mechanism off the aft (rear)
-- Customers wear **canvas exo-skeletons** that displace water
-- Operating territory: **New England**
-- Risk factor: **sharks** (confirmed, illustrated)
+**Live site:** https://azqato.github.io/mcboat/
 
 ---
 
-## 🌊 What This Website Does
-
-A static, meme-forward marketing site for the venture. Features include:
-
-- **Landing page** with animated boat and hero copy
-- **Product showcase** for the Canvas Exo-Skeleton (the flagship wearable)
-- **Interactive Eject Demo** — click a button, watch a stick figure get launched
-- **New England Service Map** — hand-drawn aesthetic, obviously
-- **Investor Pitch page** — formatted like a real pitch deck but absolutely unhinged
-- **FAQ** — answering the questions nobody asked but everybody deserves
-
----
-
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
+|-------|------------|
 | Markup | HTML5 |
-| Styling | CSS3 (custom properties, animations) |
-| Logic | Vanilla JavaScript (ES6+) |
-| Hosting | GitHub Pages |
-| Framework | None. We're old school. Like the sticky notes. |
+| Styling | CSS3 (custom properties, keyframe animations, mobile-first responsive) |
+| Scripting | Vanilla JavaScript ES6+ (IIFE pattern, no modules) |
+| Fonts | Google Fonts — Permanent Marker, Inter (2 external requests total) |
+| Hosting | GitHub Pages (static, no server) |
+| Build toolchain | None |
 
-No build tools. No bundlers. No npm. Just vibes and a dream born on Post-it notes.
-
----
-
-## 📁 Project Structure
-
-```
-boaty-mcboatface/
-├── index.html              # Main landing page
-├── css/
-│   └── styles.css          # Global styles
-├── js/
-│   └── main.js             # All interactivity
-├── assets/
-│   ├── images/
-│   │   ├── business-plan.png   # The sacred sticky note photo
-│   │   └── og-image.png        # Social share image
-│   └── sounds/
-│       ├── splash.mp3          # Optional: eject sound effect
-│       └── horn.mp3            # Optional: boat horn
-├── pages/
-│   ├── product.html        # Canvas Exo-Skeleton product page
-│   ├── invest.html         # Investor pitch parody
-│   ├── map.html            # New England service area
-│   └── faq.html            # Frequently asked absurd questions
-├── README.md
-├── PRD.md
-└── TRD.md
-```
+No npm. No bundler. No framework. No dependencies to install.
 
 ---
 
-## 🚀 Running Locally
+## Prerequisites
 
-No setup required. Literally just:
+- A modern browser (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
+- Git
+- Python 3 or Node.js — only needed if you want a local dev server with correct MIME types
+
+No Node version requirement. No package manager required.
+
+---
+
+## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/boaty-mcboatface.git
-cd boaty-mcboatface
-open index.html
+git clone https://github.com/Azqato/mcboat.git
+cd mcboat
 ```
 
-Or use a simple local server if you want hot-reload:
+No further setup steps.
 
+---
+
+## Run Locally
+
+Open `index.html` directly in a browser — all sub-pages resolve relative paths correctly in modern browsers via `file://`.
+
+For a proper local server (recommended to avoid any MIME or path edge cases):
+
+**Python 3:**
+```bash
+python3 -m http.server 8080
+# visit http://localhost:8080
+```
+
+**Node.js via npx:**
 ```bash
 npx serve .
-# or
-python3 -m http.server 8080
+# visit http://localhost:3000 (or the URL printed in the terminal)
 ```
 
 ---
 
-## 🌐 Deploying to GitHub Pages
+## Environment Variables
 
-1. Push the repo to GitHub
-2. Go to **Settings > Pages**
-3. Set source to `main` branch, `/ (root)`
-4. GitHub will provide a URL like: `https://your-username.github.io/boaty-mcboatface`
-
-No special config needed. Everything is static.
+None. This project has no API keys, secrets, or environment configuration of any kind. Everything is static.
 
 ---
 
-## 🦈 Contributing
+## Build
 
-Found a bug? Have a better business plan? Open a PR. Must be submitted on sticky notes or it will be rejected.
-
----
-
-## ⚖️ License
-
-MIT. Use it. Remix it. Start your own canvas exo-skeleton company.
+There is no build step. The source files are the production files. What is in the repo is what is served.
 
 ---
 
-*"The canvas exo-skeleton. It displaces water. That's it. That's the pitch."*
+## Deploy
+
+The site deploys to GitHub Pages from the `main` branch root.
+
+**Automatic (on push):**
+Push to `main`. GitHub Pages rebuilds and the live site updates within ~1 minute.
+
+**Initial setup on a new fork:**
+1. Go to repository **Settings → Pages**
+2. Source: `Deploy from a branch`
+3. Branch: `main` / folder: `/ (root)`
+4. Save — site will be live at `https://<username>.github.io/mcboat/`
+
+No CI pipeline, no build action, no deployment scripts required.
+
+---
+
+## Project Structure
+
+```
+mcboat/
+├── index.html              # Landing page (hero, eject demo, feature cards)
+├── product.html            # Canvas Exo-Skeleton explainer, spec table, pricing tiers, buy modal
+├── map.html                # Interactive SVG map of New England with per-state shark risk
+├── invest.html             # Seven-slide parody investor pitch deck
+├── faq.html                # Twelve-question FAQ accordion
+├── css/
+│   └── styles.css          # Single global stylesheet — all design tokens and components
+├── js/
+│   └── main.js             # All JS: eject demo, counter, FAQ accordion, map, modal, easter eggs
+├── img/
+│   └── boat.jpeg           # Reference image (not served to users)
+├── assets/
+│   ├── images/             # og-image.png, business-plan.png (optional — site degrades gracefully without them)
+│   └── sounds/             # splash.mp3, horn.mp3 (optional)
+├── README.md               # This file
+└── docs/
+    ├── PRD.md              # Product, technical, metrics, roadmap, runbook, security, tenets
+    ├── DESIGN.md           # Visual design system
+    └── PATCHNOTES.md       # Changelog
+```
+
+---
+
+## Documentation
+
+Full project documentation is in [/docs](docs/).

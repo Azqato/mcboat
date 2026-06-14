@@ -78,7 +78,7 @@
 
   function playSound(name) {
     if (localStorage.getItem('bmf_sound') !== 'true') return;
-    var a = new Audio('../assets/sounds/' + name + '.mp3');
+    var a = new Audio('assets/sounds/' + name + '.mp3');
     a.play().catch(function () {});
   }
 
