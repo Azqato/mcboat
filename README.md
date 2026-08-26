@@ -1,123 +1,62 @@
 # Boaty McBoatface Ventures
 
-A static parody marketing website for a fictional New England boat ejection tourism company, built from a four-sticky-note business plan.
+A satirical website for a fictional New England tourism company whose entire
+business is ejecting paying customers off the back of a boat while they wear a
+canvas frame that displaces water. The whole thing is built from a real business
+plan that was drawn on four sticky notes and sent as a text message.
 
 **Live site:** https://azqato.github.io/mcboat/
 
----
+## What the site offers
 
-## Tech Stack
+**The story.** The home page shows the four-sticky-note business plan the company
+is built on, drawn out as illustrations, alongside a short account of where the
+idea came from. It takes about a minute to read and explains the entire premise.
 
-| Layer | Technology |
-|-------|------------|
-| Markup | HTML5 |
-| Styling | CSS3 (custom properties, keyframe animations, mobile-first responsive) |
-| Scripting | Vanilla JavaScript ES6+ (IIFE pattern, no modules) |
-| Fonts | Google Fonts — Permanent Marker, Inter (2 external requests total) |
-| Hosting | GitHub Pages (static, no server) |
-| Build toolchain | None |
+**The eject demo.** A button on the home page that launches a stick figure off a
+boat in an arc and drops it in the water with a splash. It counts how many times
+you have pressed it today. This is the closest thing to a product the company has.
 
-No npm. No bundler. No framework. No dependencies to install.
+**The Canvas Exo-Skeleton.** A full product page for the flagship item: what it is
+made of (canvas), what it does (displaces water), a specification table, and three
+purchase tiers at $299, $499, and $999. Pressing Buy Now is part of the joke.
 
----
+**The service map.** An illustrated map of all six New England states with a shark
+risk level for each one. Hover any state for its rating and a note about it.
+Vermont is included and rated zero, on the grounds that it is landlocked.
 
-## Prerequisites
+**The investor pitch.** A seven-slide deck asking for $2,000,000: the problem, the
+solution, market size, why now, traction, the team, and a line-by-line breakdown
+of how the money would be spent. It reads like a real seed deck, which is the point.
 
-- A modern browser (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
-- Git
-- Python 3 or Node.js — only needed if you want a local dev server with correct MIME types
+**The FAQ.** Twelve questions answered in earnest, including whether this is legal,
+what happens if you cannot swim, whether there are sharks, and whether the company
+is real. The answers are the most complete version of the joke on the site.
 
-No Node version requirement. No package manager required.
+There are also a few things hidden for people who go looking.
 
----
+## Who it is for
 
-## Installation
+People who were sent the link and have two minutes. People who know the 2016 story
+of the British public voting to name a polar research vessel Boaty McBoatface.
+People who enjoy a parody that commits fully to the format it is parodying. It
+reads on a phone as well as it does on a desktop.
 
-```bash
-git clone https://github.com/Azqato/mcboat.git
-cd mcboat
-```
+## Current status
 
-No further setup steps.
+Live and complete. All five pages ship, all of the interactive parts work, and the
+site is not under active feature development. Changes at this point are corrections
+and polish.
 
----
+The company is not real. Nothing on the site can be purchased, no money can be sent,
+and no personal information is collected or stored anywhere outside your own browser.
 
-## Run Locally
+## Where to learn more
 
-Open `index.html` directly in a browser — all sub-pages resolve relative paths correctly in modern browsers via `file://`.
+Everything technical lives in [/docs](docs/): how to run the site locally, how it is
+built and deployed, the design system, the product reasoning, and the full change
+history.
 
-For a proper local server (recommended to avoid any MIME or path edge cases):
-
-**Python 3:**
-```bash
-python3 -m http.server 8080
-# visit http://localhost:8080
-```
-
-**Node.js via npx:**
-```bash
-npx serve .
-# visit http://localhost:3000 (or the URL printed in the terminal)
-```
-
----
-
-## Environment Variables
-
-None. This project has no API keys, secrets, or environment configuration of any kind. Everything is static.
-
----
-
-## Build
-
-There is no build step. The source files are the production files. What is in the repo is what is served.
-
----
-
-## Deploy
-
-The site deploys to GitHub Pages from the `main` branch root.
-
-**Automatic (on push):**
-Push to `main`. GitHub Pages rebuilds and the live site updates within ~1 minute.
-
-**Initial setup on a new fork:**
-1. Go to repository **Settings → Pages**
-2. Source: `Deploy from a branch`
-3. Branch: `main` / folder: `/ (root)`
-4. Save — site will be live at `https://<username>.github.io/mcboat/`
-
-No CI pipeline, no build action, no deployment scripts required.
-
----
-
-## Project Structure
-
-```
-mcboat/
-├── index.html              # Landing page (hero, eject demo, feature cards)
-├── product.html            # Canvas Exo-Skeleton explainer, spec table, pricing tiers, buy modal
-├── map.html                # Interactive SVG map of New England with per-state shark risk
-├── invest.html             # Seven-slide parody investor pitch deck
-├── faq.html                # Twelve-question FAQ accordion
-├── css/
-│   └── styles.css          # Single global stylesheet — all design tokens and components
-├── js/
-│   └── main.js             # All JS: eject demo, counter, FAQ accordion, map, modal, easter eggs
-├── img/
-│   └── boat.jpeg           # Reference image (not served to users)
-├── assets/
-│   ├── images/             # og-image.png, business-plan.png (optional — site degrades gracefully without them)
-│   └── sounds/             # splash.mp3, horn.mp3 (optional)
-├── README.md               # This file
-└── docs/
-    ├── PRD.md              # Product, technical, metrics, roadmap, runbook, security, tenets
-    ├── DESIGN.md           # Visual design system
-    └── PATCHNOTES.md       # Changelog
-```
-
----
-
-## Documentation
-
-Full project documentation is in [/docs](docs/).
+- [docs/PRD.md](docs/PRD.md) is the complete reference: product, architecture, runbook, conventions, and open questions
+- [docs/DESIGN.md](docs/DESIGN.md) is the visual system: color, type, spacing, components, motion
+- [docs/PATCHNOTES.md](docs/PATCHNOTES.md) is the dated change log
